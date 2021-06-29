@@ -6,6 +6,11 @@ function increment(){
     countElement.textContent = count;
 }
 
+function decrement(){
+    count -= 1;
+    countElement.textContent = count;
+}
+
 let saveElement = document.getElementById("save-el");
 
 function safe(){
