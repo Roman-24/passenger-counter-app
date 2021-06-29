@@ -11,4 +11,8 @@ let saveElement = document.getElementById("save-el");
 function safe(){
     let countStr = count + " - ";
     saveElement.textContent += countStr;
+
+    // po uložení sa counter znuluje
+    countElement.textContent = 0;
+    count = 0;
 }
