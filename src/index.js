@@ -1,11 +1,14 @@
-
-let countElement = document.getElementById("count-el")
-
-
-
+let countElement = document.getElementById("count-el");
 let count = 0;
 
-function increment() {
+function increment(){
     count += 1;
-    countElement.innerText = count;
+    countElement.textContent = count;
+}
+
+let saveElement = document.getElementById("save-el");
+
+function safe(){
+    let countStr = count + " - ";
+    saveElement.textContent += countStr;
 }
