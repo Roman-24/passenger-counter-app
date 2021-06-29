@@ -7,8 +7,11 @@ function increment(){
 }
 
 function decrement(){
-    count -= 1;
-    countElement.textContent = count;
+    
+    if (count > 0){ // nemôžeme byť záporný počet cestujúcich 
+        count -= 1;
+        countElement.textContent = count;
+    }
 }
 
 let saveElement = document.getElementById("save-el");
