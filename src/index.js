@@ -21,3 +21,9 @@ function safe(){
     countElement.textContent = 0;
     count = 0;
 }
+
+function reset(){
+    count = 0;
+    countElement.textContent = 0;
+    saveElement.textContent = "Previous entires: "
+}
